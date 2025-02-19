@@ -9,25 +9,29 @@
 </head>
 
 <body>
-    <header>
-        <h1>AI Breakfast Generator</h1>
-    </header>
-    <main>
-        <form>
-            <input type="text" placeholder="Enter the key ingredient you want for this morning" required autofocus
-                autocomplete="off">
-            <input type="submit" value="Submit">
-        </form>
-        <div>
-            Ingredients
-            <br />
-            Directions
-        </div>
-    </main>
-    <footer>This AI project was coded by <a href="https://github.com/jessica-nardy" target="_blank">Jessica Nardy</a>,
-        is open-sourced on <a href="https://github.com/jessica-nardy/breakfast-recipes" target="_blank">GitHub</a> and
-        hosted on <a href="https://breakfast-nardy.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>AI Breakfast Generator</h1>
+        </header>
+        <main>
+            <form>
+                <input type="text" placeholder="Enter the key ingredient you want for this morning" required autofocus
+                    autocomplete="off" class="input">
+                <input type="submit" value="Submit" class="button">
+            </form>
+            <div class="recipe">
+                Ingredients
+                <br />
+                Directions
+            </div>
+        </main>
+        <footer>This AI project was coded by <a href="https://github.com/jessica-nardy" target="_blank">Jessica
+                Nardy</a>,
+            is open-sourced on <a href="https://github.com/jessica-nardy/breakfast-recipes" target="_blank">GitHub</a>
+            and
+            hosted on <a href="https://breakfast-nardy.netlify.app/" target="_blank">Netlify</a>
+        </footer>
+    </div>
     <script src="src/index.js"></script>
 </body>
 
