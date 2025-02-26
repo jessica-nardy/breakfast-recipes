@@ -1,5 +1,8 @@
 body {
-  background-color: lightblue;
+  background-image: url("eggs2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
@@ -7,6 +10,7 @@ h1 {
   margin-bottom: 45px;
   font-size: 36px;
   font-weight: 800;
+  color: rgb(198, 17, 126);
 }
 
 .container {
@@ -15,19 +19,31 @@ h1 {
 }
 
 form {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+
+.form-container {
   background-color: white;
   padding: 15px;
   border-radius: 14px;
   margin-bottom: 20px;
 }
 
+small {
+  color: rgba(26, 25, 25, 0.5);
+  margin-left: 20px;
+}
+
 .input {
   width: 70%;
   padding: 16px;
-  border-radius: 14px;
+  border-radius: 5px;
   border: 1px solid grey;
   font-size: 16px;
   line-height: 20px;
+  transition: all 200ms ease-in-out;
 }
 
 .button {
@@ -37,17 +53,42 @@ form {
   margin-left: 10px;
 }
 
+.button:hover {
+  background-color: rgba(26, 25, 25, 0.2);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
 .recipe {
   background-color: rgb(247, 240, 240, 0.8);
   padding: 15px;
-  border-radius: 14px;
+  border-radius: 5px;
   margin-bottom: 20px;
   line-height: 35px;
-  border: none;
+  border-left: 3px solid rgb(241, 243, 81);
 }
 
 footer {
   font-size: 13px;
   text-align: center;
   margin-top: 30px;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  color: rgba(26, 25, 25, 0.7);
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

@@ -16,12 +16,15 @@
             <h1>AI Breakfast Generator</h1>
         </header>
         <main>
-            <form id="breakfast-form">
-                <input type="text" placeholder="Enter the key ingredient you want for this morning" required autofocus
-                    autocomplete="off" class="input" id="user-input">
-                <input type="submit" value="Submit" class="button">
-            </form>
-            <div class="recipe" id="recipe"></div>
+            <div class="form-container">
+                <form id="breakfast-form">
+                    <input type="text" placeholder="Enter the key ingredient you want for this morning" required
+                        autofocus autocomplete="off" class="input" id="user-input">
+                    <input type="submit" value="Submit" class="button">
+                </form>
+                <small>i.e.: strawberries, eggs or oats </small>
+            </div>
+            <div class="recipe hidden" id="recipe"></div>
         </main>
         <footer>This AI project was coded by <a href="https://github.com/jessica-nardy" target="_blank">Jessica
                 Nardy</a>,
